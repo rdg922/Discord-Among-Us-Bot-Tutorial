@@ -36,6 +36,7 @@ client.on('message', (message) => {
         for (let member of vcMembers) {
             let newVoiceState = !member.voice.serverMute; // serveMute is a boolean that we flip in order to toggle the new voice state on and off
             member.voice.setMute(newVoiceState); 
+            // The code below is a normal way of determining what output to do, but I opted to make it a little shorter to teach Ternary operators on like 46
             // let output;
             // if (newVoiceState) {
             //     output = "Muted " + member.displayName;
@@ -47,11 +48,7 @@ client.on('message', (message) => {
         }
 
     } else if (command == ",help") {
-        // const embed = new Discord.MessageEmbed();
-        // embed.setColor("#0099ff");
-        // embed.setTitle("Among Us Discord Bot");
-        // embed.setImage("https://www.apkmirror.com/wp-content/uploads/2020/11/64/5fa0b604e2e7d.png");
-        // message.channel.send(embed);
+        // Below is how you make a customizeable discord embedded message!
         const embed = new Discord.MessageEmbed()
             .setColor("#0099ff")
             .setTitle("Among Us Discord Bot")
@@ -62,7 +59,7 @@ client.on('message', (message) => {
             .addField(",mute @___:", "toggle's someonee's current mute status on and off")
             .addField(",muteall", "like mute, but toggles everyone individually")
             .setFooter("Thank you using this bot!");
-        message.channel.send(embed);
+        message.channel.send(embed); // And send it to the Discord channel it was asked on
     }
 })
 

@@ -26,7 +26,15 @@ For adding our bot to our server we'll be using [DIscord Permissions Calculator]
 * Day 2?: Muting all people in a single VC and sending custom Discord Messages
 * Day 3?: Keeping track of alive & dead players and handling multiple commands
 
-### Possible Future Projects:**
+## Instructions:
+The folders are organized by day, so refer back to the above for more information on which days cover what. You only need the items in the folder, and if there is not a package.json, copy that from the root directory into wherever you run this code, and edit your config.json appropriately. Then, navigate to the directory in your terminal and run the following commands:
+```
+npm i
+node index.js
+```
+All the files are named index.js currently, but if that everchanges, replace that with the name of the file (that is not config.json or package.json)
+
+## Possible Future Projects:**
 * Hangman
 If you have an idea for a Discord Bot that you want me to consider, make sure to open an issue and I may make it!
 
