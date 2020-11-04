@@ -3,11 +3,11 @@
 ## About
 
 This repo contains documented code for all the discord bots we've been doing during the CS Clubs, so if you've missed anything from the club check here for any code.
-<br>
+
 ## Links:
 
 ### Downloads:
-<br>
+
 [Node:](https://nodejs.org/en/) That's it!
 
 If you want to follow along I use [VSCode](https://code.visualstudio.com), but that isn't necessary for the tutorials, though it does help.
