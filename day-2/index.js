@@ -27,7 +27,7 @@ client.on('message', (message) => {
             message.reply("Muted user!");
         }
         
-    } else if (command == ",muteall") {
+    } else if (command == ",toggle") {
 
         let voiceChannel = message.member.voice.channel; // Gets the voice channel the author of the message is currently in 
         if (!voiceChannel) return;

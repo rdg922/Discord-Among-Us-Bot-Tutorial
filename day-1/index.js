@@ -1,6 +1,6 @@
-import { Client } from 'discord.js'; // import the Discord object (Using new ES6 imports)
+const { Client } = require('discord.js'); // import the Discord object (Using new ES6 imports)
 let client = new Client() // create a Client Object from inside the Discord object imported
-import { token } from './config.json'; // import config as an object;
+const { token }  = require('./config.json'); // import config as an object;
 
 // Executes a callback function when Bot is able to signin to discord
 client.on('ready', () => {
